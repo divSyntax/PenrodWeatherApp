@@ -29,7 +29,7 @@ namespace PenrodWeatherApp
             using (WebClient web = new WebClient())
             {
                 //Get api end point for weather
-                string Milwaukee = string.Format("http://api.openweathermap.org/data/2.5/weather?q=Milwaukee&appid=452cd8292baf6b9d76d2ec42e2d0972c&units=imperial");
+                string Milwaukee = string.Format("http://api.openweathermap.org/data/2.5/weather?q=" + cities[0] + "&appid=" + AAPID + "&units=imperial");
 
                 //download requested source as a string
                 var Json = web.DownloadString(Milwaukee);
@@ -60,7 +60,7 @@ namespace PenrodWeatherApp
             using (WebClient web = new WebClient())
             {
                 //Get api end point for weather
-                string Minneapolis = string.Format("http://api.openweathermap.org/data/2.5/weather?q=Minneapolis&appid=452cd8292baf6b9d76d2ec42e2d0972c&units=imperial");
+                string Minneapolis = string.Format("http://api.openweathermap.org/data/2.5/weather?q=" + cities[1] + "&appid=" + AAPID + "&units=imperial");
              
                  //download requested source as a string
                 var Json = web.DownloadString(Minneapolis);
@@ -91,7 +91,7 @@ namespace PenrodWeatherApp
             using (WebClient web = new WebClient())
             {
                 //Get api end point for weather
-                string Chicago = string.Format("http://api.openweathermap.org/data/2.5/weather?q=Chicago&appid=452cd8292baf6b9d76d2ec42e2d0972c&units=imperial");
+                string Chicago = string.Format("http://api.openweathermap.org/data/2.5/weather?q=" + cities[2] + "&appid=" + AAPID + "&units=imperial");
 
                  //download requested source as a string
                 var Json = web.DownloadString(Chicago);
@@ -122,7 +122,7 @@ namespace PenrodWeatherApp
                 using (WebClient web = new WebClient())
                 {
                     //Get api end point for weather
-                    string Dallas = string.Format("http://api.openweathermap.org/data/2.5/weather?q=Dallas&appid=452cd8292baf6b9d76d2ec42e2d0972c&units=imperial");
+                    string Dallas = string.Format("http://api.openweathermap.org/data/2.5/weather?q=" + cities[3] + "&appid=" + AAPID + "&units=imperial");
 
                      //download requested source as a string
                     var Json = web.DownloadString(Dallas);
